@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Teste de CORS - Exercício 3 (origem restrita)</title>
+</head>
+<body>
+  <h1>Teste de CORS - Exercício 3 (origem restrita)</h1>
+  <p>Abra o console do navegador (F12) para ver o resultado.</p>
+  <pre id="saida">Carregando...</pre>
+
+  <script>
+    fetch('http://localhost:3000/usuarios')
+      .then(r => r.json())
+      .then(dados => {
+        console.log(dados);
+        document.getElementById('saida').textContent = JSON.stringify(dados, null, 2);
+      })
+      .catch(erro => {
+        console.error(erro);
+        document.getElementById('saida').textContent = 'Erro: veja o console (F12)';
+      });
+  </script>
+</body>
+</html>

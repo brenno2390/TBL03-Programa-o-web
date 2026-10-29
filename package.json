@@ -1,0 +1,16 @@
+{
+  "name": "cors-exercicios",
+  "version": "1.0.0",
+  "description": "Exercícios de CORS com Node.js e Express",
+  "scripts": {
+    "ex1": "node exercicio-1/server.js",
+    "ex2": "node exercicio-2/server.js",
+    "ex3": "node exercicio-3/server.js",
+    "ex4": "node exercicio-4/server.js",
+    "ex5": "node exercicio-5/server.js"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.19.2"
+  }
+}
